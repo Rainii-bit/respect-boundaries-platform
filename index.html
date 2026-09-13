@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respect & Boundaries - Learn, Report, Grow</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🤝 Respect & Boundaries</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#report">Report</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary" id="loginBtn">Login</button>
+                <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Build a Respectful Future</h2>
+                <p>Learn about boundaries, understand what's right and wrong, and help create a safer community for everyone.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large">Start Learning</button>
+                    <button class="btn btn-secondary btn-large">Report an Issue</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="illustration">
+                    <span>👥</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Educational Modules</h3>
+                    <p>Learn about respect, boundaries, consent, and digital citizenship through interactive content.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Anonymous Reporting</h3>
+                    <p>Safely report inappropriate behavior and disrespectful actions without fear of retaliation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Our AI helps identify patterns and provides personalized educational recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your learning journey and see how you're growing in understanding respect and boundaries.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>For Educators</h3>
+                    <p>Tools for teachers to manage classroom reports and provide targeted education to students.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Community Support</h3>
+                    <p>Part of a community committed to building respect and holding each other accountable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn Section -->
+    <section id="learn" class="learn">
+        <div class="container">
+            <h2>Why This Matters</h2>
+            <div class="learn-content">
+                <div class="learn-item">
+                    <h3>🚹 For Everyone Growing Up</h3>
+                    <p>Understanding boundaries and respect is crucial. We help you learn what's acceptable behavior, why consent matters, and how to build healthy relationships.</p>
+                </div>
+                <div class="learn-item">
+                    <h3>🎓 In Your School & Community</h3>
+                    <p>Together, we create an environment where disrespect isn't tolerated, jokes that hurt aren't acceptable, and everyone learns accountability.</p>
+                </div>
+                <div class="learn-item">
+                    <h3>🌍 For Our Future</h3>
+                    <p>Building respect now means creating a healthier society tomorrow. Every person who learns these values contributes to positive change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report Section -->
+    <section id="report" class="report">
+        <div class="container">
+            <h2>Report Inappropriate Behavior</h2>
+            <p class="section-subtitle">Your report helps us maintain a respectful community</p>
+            <div class="report-form-container">
+                <form id="reportForm" class="report-form">
+                    <div class="form-group">
+                        <label for="reportType">What type of behavior are you reporting?</label>
+                        <select id="reportType" required>
+                            <option value="">-- Select Category --</option>
+                            <option value="bullying">Bullying</option>
+                            <option value="harassment">Sexual Harassment</option>
+                            <option value="disrespect">Disrespectful Language</option>
+                            <option value="inappropriate-joke">Inappropriate Joke/Comment</option>
+                            <option value="discrimination">Discrimination</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="severity">How severe is the issue?</label>
+                        <select id="severity" required>
+                            <option value="">-- Select Severity --</option>
+                            <option value="low">Low - Mild discomfort</option>
+                            <option value="medium">Medium - Concerning behavior</option>
+                            <option value="high">High - Serious/repeated behavior</option>
+                            <option value="critical">Critical - Safety concern</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Describe what happened:</label>
+                        <textarea id="description" rows="6" placeholder="Provide details about the incident..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Where did this happen?</label>
+                        <input type="text" id="location" placeholder="e.g., Classroom, Online, School Event" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="anonymous" checked>
+                            Report Anonymously
+                        </label>
+                        <p class="form-hint">Check this box to keep your identity private</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Submit Report</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <p>Have questions? Want to partner with us? Reach out!</p>
+                <p><strong>Email:</strong> info@respectboundaries.com</p>
+                <p><strong>Phone:</strong> 1-800-RESPECT</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Respect & Boundaries Platform. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "server": {
+    "port": 5000,
+    "host": "localhost",
+    "env": "development"
+  },
+  "database": {
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "password",
+    "database": "respect_boundaries",
+    "pool": {
+      "min": 5,
+      "max": 20
+    }
+  },
+  "jwt": {
+    "secret": "your-secret-key-here",
+    "expiresIn": "7d"
+  },
+  "ai": {
+    "provider": "huggingface",
+    "apiKey": "your-api-key-here",
+    "model": "bert-base-multilingual-uncased"
+  },
+  "email": {
+    "service": "gmail",
+    "from": "noreply@respectboundaries.com",
+    "apiKey": "your-email-api-key"
+  },
+  "logging": {
+    "level": "info",
+    "format": "json"
+  }
+}
